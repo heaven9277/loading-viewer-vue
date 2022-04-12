@@ -1,0 +1,25 @@
+{
+  "name": "loading-viewer-vue",
+  "description": "全局加载器",
+  "version": "1.0.0",
+  "author": "zhenghaiwen",
+  "private": false,
+  "main": "dist/loading-viewer-vue.js",
+  "scripts": {
+    "serve": "vue-cli-service serve",
+    "build": "vue-cli-service build"
+  },
+  "repository": {
+    "type": "git",
+    "url": ""
+  },
+  "dependencies": {
+    "core-js": "^3.6.5",
+    "vue": "^3.0.0"
+  },
+  "devDependencies": {
+    "@vue/cli-plugin-babel": "~4.5.13",
+    "@vue/cli-service": "~4.5.13",
+    "@vue/compiler-sfc": "^3.0.0"
+  }
+}
