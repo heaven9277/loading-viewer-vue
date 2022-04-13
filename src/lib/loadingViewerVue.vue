@@ -4,7 +4,7 @@
  * @Author: zhenghaiwen
  * @Date: 2022-04-11 16:59:09
  * @LastEditors: zhenghaiwen
- * @LastEditTime: 2022-04-12 15:25:37
+ * @LastEditTime: 2022-04-13 09:22:26
 -->
 <template>
     <div class="init-loading-container" v-if="loadingVisible">
@@ -80,6 +80,7 @@ export default {
   z-index: 19950111;
 }
 img{
-  max-width: 30px;
+  /* max-width: 30px; */
+  width: 10%;
 }
 </style>

@@ -4,7 +4,7 @@
  * @Author: zhenghaiwen
  * @Date: 2022-04-12 15:20:20
  * @LastEditors: zhenghaiwen
- * @LastEditTime: 2022-04-12 15:23:00
+ * @LastEditTime: 2022-04-13 09:04:22
  */
 import { createVNode, render } from 'vue';
 import loadingViewerVue from './loadingViewerVue.vue'
@@ -23,6 +23,7 @@ let install = function (Vue,options) {
         // const ToastController = Vue.extend(loadingViewerVue);   //vue3.0 已经移除extend 方法
         //创建一个新的实例，实例挂载在一个空的div
         // instance = createVNode(loadingViewerVue,{}).$mount(document.createElement("div"));
+        if(instance) instance = null;
         instance = document.createElement("div");
         let options = {
             visible:true,
@@ -47,9 +48,11 @@ let install = function (Vue,options) {
                 if(domId){
                     const domIdDiv = document.getElementById(domId);
                     domIdDiv.removeChild(instance);
+                    instance = null;
                     return;
                 }
-                document.body.removeChild(instance)
+                document.body.removeChild(instance);
+                instance = null;
             },500)
         }
     }
