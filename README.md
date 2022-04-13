@@ -4,14 +4,14 @@
  * @Author: zhenghaiwen
  * @Date: 2022-04-12 21:52:37
  * @LastEditors: zhenghaiwen
- * @LastEditTime: 2022-04-13 09:32:51
+ * @LastEditTime: 2022-04-13 09:36:21
 -->
 # loading-viewer-vue
 ```
 简易loading加载
 ```
 ## How to use for vue3.0
-```
+```bash
 #import package
 npm i loading-viewer-vue
 
@@ -31,14 +31,16 @@ this.$hideLoading();
 this.$showLoading(domId)
 #hide the loading
 this.$hideLoading(domId)
-#for example
-html:
+
+#for example 举个例子
+#html:
 <div id="containers">
 </div>
-js:
+#js:
 this.$showLoading("containers");
 this.$hideLoading("containers")
-css:
+#css:
+
 #containers{
   width: 500px;
   height: 500px;

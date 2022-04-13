@@ -4,16 +4,16 @@
  * @Author: zhenghaiwen
  * @Date: 2022-04-11 16:59:09
  * @LastEditors: zhenghaiwen
- * @LastEditTime: 2022-04-13 09:22:26
+ * @LastEditTime: 2022-04-13 13:49:49
 -->
 <template>
     <div class="init-loading-container" v-if="loadingVisible">
         <!-- 不同模式展示不同的加载 -->
         <template v-if="mode">
-            <img :src="modeUrl"  @error="handleOnError"/>
+            <img :src="modeUrl"  @error="handleOnError" class="loading-mode"/>
         </template>
         <template v-else>
-            <img :src="url"  @error="handleOnError"/>
+            <img :src="url"  @error="handleOnError" class="loading-mode"/>
         </template>
     </div>
 </template>
@@ -79,8 +79,8 @@ export default {
   justify-content: center;
   z-index: 19950111;
 }
-img{
+.loading-mode{
   /* max-width: 30px; */
-  width: 10%;
+  width: 5%;
 }
 </style>
